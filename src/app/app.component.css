@@ -17,13 +17,13 @@
   padding-bottom: 16px;
 }
 
-#playBar {
+#play-bar {
   width: 80%;
   margin:5% auto;
   position: relative;
 }
 
-#progressBar {
+#progress-bar {
   background-color: #246ed3;
   border-radius: 25px;
   height: 3px;
@@ -53,7 +53,7 @@
   z-index: 10;
 }
 
-#playHead{
+#play-head{
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -67,7 +67,7 @@
   transform:translate(-50%,-50%);
 }
 
-#timeBar {
+#time-bar {
   position: relative;
 }
 

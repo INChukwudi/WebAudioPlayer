@@ -75,13 +75,13 @@ export class AppComponent implements OnInit {
   nextAudio() : void {
     this.loadAudioProperties(++this.currentAudioIndex);
     this.togglePlayButtonImage(true);
-    if (this.isAutoPlaySet) setTimeout(this.playAudio, 200);
+    if (this.isAutoPlaySet) setTimeout(() => this.playAudio(), 200);
   }
 
   previousAudio() : void {
     this.loadAudioProperties(--this.currentAudioIndex);
     this.togglePlayButtonImage(true);
-    if (this.isAutoPlaySet) setTimeout(this.playAudio, 200);
+    if (this.isAutoPlaySet) setTimeout(() => this.playAudio(), 200);
   }
 
   disableNextOrPreviousButton() : void {
@@ -158,12 +158,12 @@ export class AppComponent implements OnInit {
     src: ["assets/audio/audio_1.mp3"]
   });
 
-  playHowlerAudio() {
+  playHowlerAudio(): void {
     this.howlerAudio.play();
     setTimeout(() => this.howlerAudio.pause(), 5000);
   }
 
-  setEventListenersOnAudio() {
+  setEventListenersOnAudio(): void {
     this.howlerAudio.on("mute", () => console.log("audio muted!"));
     this.howlerAudio.on("end", () => console.log("audio ended!"));
   }

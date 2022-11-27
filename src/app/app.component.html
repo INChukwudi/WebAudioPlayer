@@ -24,18 +24,18 @@
     <img src="assets/images/img_lights.jpg" class="w3-card" alt="album image" id="album-image">
   </div>
 
-  <div id="playBar"
+  <div id="play-bar"
        (mouseenter)="togglePlayHeadVisibility()"
        (mouseleave)="togglePlayHeadVisibility()">
-    <div id="progressBar">
+    <div id="progress-bar">
       <div id="unplayed" [style.left.%]="playPercent"></div>
     </div>
-    <div id="playHead"
+    <div id="play-head"
          [style.left.%]="playPercent"
          [style.display]="isPlayHeadVisible ? 'block' : 'none'"></div>
   </div>
 
-  <div id="timeBar">
+  <div id="time-bar">
     <p id="played">{{currentPlayingTime}}</p>
     <p id="total">{{endTime}}</p>
   </div>
@@ -62,13 +62,13 @@
 
   <div id="other-features" class="w3-row-padding w3-center w3-margin-top">
     <div id="speed" class="w3-col l4 m4 s4 w3-margin-top" (click)="changeSpeed()">
-      <p id="speedId" class="pointer">{{playBackSpeed}}</p>
+      <p id="speed-id" class="pointer">{{playBackSpeed}}</p>
       <br>
       <p class="pointer">Speed</p>
     </div>
 
     <div id="autoplay" class="w3-col l4 m4 s4 w3-margin-top pointer" (click)="toggleAutoPlaySet()">
-      <p id="autoplayId">{{(isAutoPlaySet) ? "ON" : "OFF"}}</p><br>
+      <p id="autoplay-id">{{(isAutoPlaySet) ? "ON" : "OFF"}}</p><br>
       <p>Autoplay</p>
     </div>
 

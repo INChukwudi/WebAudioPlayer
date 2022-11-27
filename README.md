@@ -1,6 +1,12 @@
 # WebAudioPlayer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+This project is created by Chukwudi Ike-Nwako <[ikenwakochukwudi@gmail.com](mailto:ikenwakochukwudi@gmail.com)>
+
+## Overview
+
+The project is an Audio Player Application that exposes audio events and how they can be custom managed. Feel free to contribute constructively. 
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
 ## Development server
 
